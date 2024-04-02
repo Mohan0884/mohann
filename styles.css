@@ -1,0 +1,319 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin-top: 0;
+    padding:0;
+    margin:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.image{
+    width:200px;
+    height:200px;
+    border-radius: 20%;
+    margin:10px;
+}
+.para{
+    letter-spacing: normal;
+    font-size: 0.7rem;
+    font-weight: 100;
+}
+@media  (min-width:500px) {
+    .name-full{
+        padding:3rem;
+    }
+}
+.intro{
+    height:100vh;
+    width:100%;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3));
+    background-color: black;
+    
+}
+.name-full{
+    color:white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width:100%;
+    height:100vh;
+    padding:7rem;
+    font-family: 'Secular One', sans-serif;
+
+}
+.name{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+
+font-size: 1rem;
+font-family: 'Nunito', sans-serif;
+text-transform: uppercase;
+}
+.secname{
+    letter-spacing: 5px;
+    margin-left:1rem;
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    background-color: #EFEFEF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    width:100%;
+    position: fixed;
+}
+.navbar-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navbar-items>li{
+    text-transform: uppercase;
+    list-style: none;
+    padding:0px 30px 0px 30px;
+}
+.links{
+    font-family: 'Secular One', sans-serif;
+    text-decoration: none;
+    color:inherit;
+    transition: 0.5ms;
+}
+.links:hover{
+    text-decoration: underline;
+}
+@media (max-width:550px) {
+    .links{
+        font-family: 'Secular One', sans-serif;
+        text-decoration: none;
+        color:inherit;
+        transition: 0.5ms;
+        font-size: 0.8rem;
+    }
+    .navbar-items>li{
+        text-transform: uppercase;
+        list-style: none;
+        padding:0px 20px 0px 20px;
+    }
+}
+@media (max-width:410px) {
+    .links{
+        font-family: 'Secular One', sans-serif;
+        text-decoration: none;
+        color:inherit;
+        transition: 0.5ms;
+        font-size: 0.6rem;
+    }
+    .navbar-items>li{
+        text-transform: uppercase;
+        list-style: none;
+        padding:0px 15px 0px 15px;
+    }
+}
+@media (max-width:315px) {
+    .links{
+        font-family: 'Secular One', sans-serif;
+        text-decoration: none;
+        color:inherit;
+        transition: 0.5ms;
+        font-size: 0.6rem;
+    }
+    .navbar-items>li{
+        text-transform: uppercase;
+        list-style: none;
+        padding:0px 10px 0px 10px;
+    }
+}
+
+.about-me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EFEFEF;
+    width:100%;
+    
+}
+.about-head{
+    font-size: 3rem;
+}
+.about-content{
+    font-size: 1.5rem;
+}
+.about-me-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.about-me-left>a{
+    margin:30px;    
+}
+
+.about-me-right{
+        padding:4rem;
+}
+@media (max-width:750px) {
+    
+.about-me{
+    flex-wrap: wrap;
+
+}
+.about-head{
+    font-size: 2rem;
+}
+.about-content{
+    font-size: 1.0rem;
+}
+.about-me-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.about-me-left>a{
+    margin:10px;    
+}
+
+.about-me-right{
+        padding:2rem;
+}
+}
+.projects{
+    margin-top:5px;
+    height:100vh;
+    background-color: #020028;
+    color:white;
+}
+@media (max-width:650px) {
+    .projects{
+        height:150vh;
+    }
+}
+.resume{
+    margin-top:5px;
+    color:white;
+    height:100vh;
+    background-color: #000000;
+    align-items: center;
+}
+.bottom{
+    height:20vh;
+}
+.skills{
+    min-height:150vh;
+    height: auto;
+    background-color: black;
+    margin-top:5px;
+    color:white;
+    font-family: 'Quicksand', sans-serif;
+    padding:3rem;
+}
+.all-skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column ;
+}
+.skill-full{
+    display:flex;
+    margin: 2rem;
+}
+.full-skill{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 2px solid white;
+    width:300px;
+margin: 10px;
+padding: 20px;
+}
+.full-skill-name{
+    margin:20px;
+}
+.skill-head{
+    text-align: center;
+}
+.projects{
+    font-family: 'Quicksand', sans-serif;
+    height: auto;
+}
+.project-title{
+    text-align: center;
+    padding:3rem;
+}
+.proj{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.project-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.proj-img{
+    width:300px;
+    height:260px;
+}
+.resume-head{
+    text-align: center;
+    padding-top:4rem;
+    font-family: 'Quicksand', sans-serif;
+
+}
+.text-center{
+    text-align: center;
+}
+.text-centers{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+
+}
+.myresume{
+    font-family: 'Quicksand', sans-serif;
+    width:200px;
+    height:50px;
+    padding:10px;
+    background-color: white;
+    color:black;
+    text-decoration: none;
+    text-align: center;
+    margin:20px;
+    transition: 0.8s;
+    border-radius: 5px;
+}
+.myresume:hover{
+    background-color: black;
+    color:white;
+
+}
+.resumes{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+.bottom{
+    text-align: center;
+}
+@media (max-width:550px) {
+    
+    .intro{
+        height:60vh;
+    }
+    .projects{
+        height:150vh;
+
+    }
+    .resume{
+        height:80vh;
+    }
+    .skills{
+        height:80vh;
+    }
+}
